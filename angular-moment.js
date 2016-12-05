@@ -10,23 +10,23 @@
 		return angular.isUndefined(val) || val === null;
 	}
 
-	function requireMoment() {
-		try {
-			return require('moment'); // Using nw.js or browserify?
-		} catch (e) {
-			throw new Error('Please install moment via npm. Please reference to: https://github.com/urish/angular-moment'); // Add wiki/troubleshooting section?
-		}
-	}
+	// function requireMoment() {
+	// 	try {
+	// 		return require('moment'); // Using nw.js or browserify?
+	// 	} catch (e) {
+	// 		throw new Error('Please install moment via npm. Please reference to: https://github.com/urish/angular-moment'); // Add wiki/troubleshooting section?
+	// 	}
+	// }
 
 	function angularMoment(angular, moment) {
 
-		if(typeof moment === 'undefined') {
-			if(typeof require === 'function') {
-				moment = requireMoment();
-			}else{
-				throw new Error('Moment cannot be found by angular-moment! Please reference to: https://github.com/urish/angular-moment'); // Add wiki/troubleshooting section?
-			}
-		}
+		// if(typeof moment === 'undefined') {
+		// 	if(typeof require === 'function') {
+		// 		moment = requireMoment();
+		// 	}else{
+		// 		throw new Error('Moment cannot be found by angular-moment! Please reference to: https://github.com/urish/angular-moment'); // Add wiki/troubleshooting section?
+		// 	}
+		// }
 
 		/**
 		 * @ngdoc overview
